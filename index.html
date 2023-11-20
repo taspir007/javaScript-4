@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- main css link -->
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    
+    <!-- hader section start -->
+    <header>
+        <nav>
+            <div class="Brand">
+                <h2>Amazon</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><button>Home</button></li>
+                    <li><button>About</button></li>
+                    <li><button class="search_open">Scarch</button></li>
+                    <li><button>Sing in</button></li>
+                    <li><button class="side-bar">Side Bars</button></li>
+                </ul>
+            </div>
+        </nav>
+       <!-- <div class="warper"> -->
+        
+    </header>
+    <!-- hader section end -->
+
+    <main style="display: flex;">
+        <aside class="js-sidebar">
+            <ul><li>menu-1</li></ul>
+            <ul><li>menu-2</li></ul>
+            <ul><li>menu-3</li></ul>
+            <ul><li>menu-4</li></ul>
+            <ul><li>menu-5</li></ul>
+        </aside>
+
+        <!-- search brns -->
+        <section id="search" class="js_search">
+            <form action="">
+                <input type="text" placeholder="What Do You Looking For?">
+                <button type="submit" style="cursor: pointer; background-color: transparent;border: none; color: white; font-size: 18px;"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <button class="search_close"><i class="fa-solid fa-xmark"></i></button>
+        </section>
+        <!-- scearch brns -->
+
+
+       <!-- login section -->
+       <section id="login">
+        
+           <div class="login_box">
+               <form action="">
+                <h2>Login Your Account</h2>
+                <div  data-validate="Valid email is required: ex@abc.xyz">
+                    <input type="email" placeholder="Entre Your Email">
+                </div>
+                <br>
+               <div class="inp-2"  data-validate="Password is required">
+                <input type="password" placeholder="Enter Your password" id="pass">
+                <button class="i-btn" id="pass_show_hide"><i class="fa-solid fa-eye-slash"></i></button>
+               </div>
+                <br>
+                <button type="submit" class="sing-btn" ">Sing In</button>
+                <br>
+                <a href="#">Forgot your password?</a>
+
+            </form>
+           </div>
+        
+       </section>
+       <!-- login section -->
+
+    </main>
+
+       
+    <!-- main js link -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
